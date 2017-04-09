@@ -1,0 +1,6 @@
+C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Weekly Projects\WeekProj2\WeekProj2\bin\Debug\WeekProj2.exe.config
+C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Weekly Projects\WeekProj2\WeekProj2\bin\Debug\WeekProj2.exe
+C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Weekly Projects\WeekProj2\WeekProj2\bin\Debug\WeekProj2.pdb
+C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Weekly Projects\WeekProj2\WeekProj2\obj\Debug\WeekProj2.exe
+C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Weekly Projects\WeekProj2\WeekProj2\obj\Debug\WeekProj2.pdb
+C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Weekly Projects\WeekProj2\WeekProj2\obj\Debug\WeekProj2.csprojResolveAssemblyReference.cache
