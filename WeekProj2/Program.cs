@@ -14,15 +14,15 @@ namespace WeekProj2
             VirtualPet myPet = new VirtualPet();
 
             //Greeting!
-            Console.WriteLine("Hello and congratulations on your newest pet! First things first, please give \nyour pet a name!");
+            Console.WriteLine("Hello and congratulations on your newest pet! \nMost people want a dog or cat for a companion, but not you! \nYou know the best companions still have a bit of the wild in them! \n");
+            Console.Write("\nWithout further dealy, straight from Eastern Asia, here is your very own Asiatic Wild Dog, the Dhole! \n-If anyone asks, just say it's a mixed shepherd breed! \nWhy don't you choose a name for your new friend?");
             myPet.name = Console.ReadLine();
 
             Console.WriteLine("\nSplendid! I'm sure you and " + myPet.name + " will get along great! \nSelect any number 1-10 to begin! \n");
 
-            int selectedOption;
+            Console.WriteLine("\n   ^__\n   | '`;\n   /\\|\n  /  |\n(/_)_|_");
 
-            bool input;
-            input = myPet.health <= 9 && myPet.hunger >= 100 && myPet.thirst >= 100;
+            int selectedOption;
 
             do
             {
@@ -34,13 +34,13 @@ namespace WeekProj2
 
                 Console.WriteLine();
                 Console.WriteLine("\nPlease select an option: ");
-                Console.WriteLine("\n1. Chow time!");
-                Console.WriteLine("\n2. Give the pet water");
-                Console.WriteLine("\n3. Play with the pet");
-                Console.WriteLine("\n4. Take pet on a walk!");
-                Console.WriteLine("\n5. Let pet sleep when tiredness is 35 or more");
-                Console.WriteLine("\n6. Let pet outside when bathroom needs are 40 or more");
-                Console.WriteLine("\n7. Take pet to doctor when health drops below 50!");
+                Console.WriteLine("\n1. Feed" + myPet.name + "!");
+                Console.WriteLine("\n2. Give " + myPet.name + " water");
+                Console.WriteLine("\n3. Play with" + myPet.name + "!");
+                Console.WriteLine("\n4. Take " + myPet.name + " on a walk!");
+                Console.WriteLine("\n5. Let " + myPet.name + " sleep when tiredness is 35 or more");
+                Console.WriteLine("\n6. Let " + myPet.name + " outside when bathroom needs are 40 or more");
+                Console.WriteLine("\n7. Take " + myPet.name + " to the vet when health drops below 50!");
                 Console.WriteLine("\n10. Quit");
 
                 bool trueF;
@@ -56,12 +56,10 @@ namespace WeekProj2
                 {
                     switch (selectedOption)
                     {
-                        //when the user selects option 1 we feed the pet
+                        /*Hunger
+                         -Feed Pet! */
+
                         case 1:
-
-                            /*Hunger:
-                             -Feed Pet! */
-
                             if (myPet.hunger <= 0)
                             {
                                 Console.WriteLine("\nIt looks like " + myPet.name + "'s full for the moment...");
@@ -70,14 +68,14 @@ namespace WeekProj2
 
                             else if (myPet.hunger >= 75 && myPet.hunger <= 90)
                             {
-                                Console.WriteLine("\nPoor " + myPet.name + " was so hungry! You should remember to feed " + myPet.name + " more often!");
+                                Console.WriteLine("\nPoor " + myPet.name + " was absolutely ravenous! You should remember to feed " + myPet.name + " more often!");
                                 break;
                             }
 
                             else
                             {
                                 myPet.Meal();
-                                Console.WriteLine("\nThank you for feeding " + myPet.name);
+                                Console.WriteLine("\nLooks like " + myPet.name + " really enjoyed the meat you fed her" );
                                 break;
                             }
 
@@ -139,7 +137,7 @@ namespace WeekProj2
                             if (myPet.restless >= 75 && myPet.restless <= 90)
                             {
                                 myPet.OverlyRestless();
-                                Console.WriteLine("\nWoah...it looks like " + myPet.name + "really wanted a walk");
+                                Console.WriteLine("\nWoah...it looks like " + myPet.name + " really wanted a walk! -You should try walking " + myPet.name + " more ofter!");
                                 break;
                             }
 
@@ -177,7 +175,7 @@ namespace WeekProj2
 
                             else
                             {
-                                Console.WriteLine("\nI looks like " + myPet.name + " just isn't tired right now!");
+                                Console.WriteLine("\nIt looks like " + myPet.name + " just isn't tired right now!");
                                 break;
                             }
 
@@ -246,6 +244,7 @@ namespace WeekProj2
                             Console.WriteLine("\nThank you for playing.");
                             break;
 
+
                         //Default
 
                         default:
@@ -262,7 +261,7 @@ namespace WeekProj2
                 while (myPet.tired >= 91)
                 {
                     myPet.TiredDecrease();
-                    Console.WriteLine("\nLooks like poor " + myPet.name + " has fallen asleep on you! \nYou should remember to let your pet rest once in a while!");
+                    Console.WriteLine("\nLooks like " + myPet.name + " has fallen asleep on you! \nEven wild doogs like Dholes need rest once in a while!");
                     break;
                 }
 
@@ -293,27 +292,26 @@ namespace WeekProj2
 
                 while (myPet.hunger >= 91)
                 {
-                    Console.WriteLine("\nPoor " + myPet.name + " is extreley malnourished! \nThe Animal Humane Society has decided you are not fit for a pet!  \nCharges will be filed!");
+                    Console.WriteLine("\nPoor " + myPet.name + " is extreley malnourished! \nThe Animal Humane Society has decided you are not fit for a pet! Charges will be filed!");
+                    Console.WriteLine("\nFurthermore, additional charges shall be filed because " + myPet.name + " has been determined to be an \nAsiatic Wild Dog and you do not have the proper license, or enclosure, for such an animal!");
                     selectedOption = myPet.end;
                     break;
                 }
 
                 while (myPet.thirst >= 91)
                 {
-                    Console.WriteLine("\nPoor " + myPet.name + " is extreley dehydrated! \nThe Animal Humane Society has decided you are not fit for a pet!  \nCharges will be filed!");
+                    Console.WriteLine("\nPoor " + myPet.name + " is extreley dehydrated! \nThe Animal Humane Society has decided you are not fit for a pet! Charges will be filed!");
+                    Console.WriteLine("\nFurthermore, additional charges shall be filed because " + myPet.name + " has been determined to be an \nAsiatic Wild Dog and you do not have the proper license, or enclosure, for such an animal!");
                     selectedOption = myPet.end;
                     break;
                 }
 
                 while (myPet.restless >= 91)
                 {
-                    Console.WriteLine("\nOh NO! It appears you left the garage door open and " + myPet.name + " got out!  \nMaybe you should have walked " + myPet.name + " more often?");
+                    Console.WriteLine("\nOh NO! It appears you left the garage door open and " + myPet.name + " got out!  \nDholes are free spirits, maybe you should have walked " + myPet.name + " more often?");
                     selectedOption = myPet.end;
                     break;
                 }
-
-
-                
 
 
                 //Automatically changes values for pet.:

@@ -4,3 +4,5 @@ C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Weekly Projects\WeekP
 C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Weekly Projects\WeekProj2\WeekProj2\obj\Debug\WeekProj2.exe
 C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Weekly Projects\WeekProj2\WeekProj2\obj\Debug\WeekProj2.pdb
 C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Weekly Projects\WeekProj2\WeekProj2\obj\Debug\WeekProj2.csprojResolveAssemblyReference.cache
+C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Weekly Projects\WeekProj2\WeekProj2\obj\Debug\WeekProj2.Properties.Resources.resources
+C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\Weekly Projects\WeekProj2\WeekProj2\obj\Debug\WeekProj2.csproj.GenerateResource.Cache
